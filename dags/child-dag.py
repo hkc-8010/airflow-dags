@@ -1,6 +1,11 @@
 from airflow import DAG
 from datetime import datetime, timedelta
 from airflow.operators.python import PythonOperator
+
+
+connect_args = {
+    'echo': True
+}
  
 default_args = {
     'owner': 'airflow',
