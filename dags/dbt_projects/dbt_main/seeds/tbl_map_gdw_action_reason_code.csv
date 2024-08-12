@@ -1,0 +1,68 @@
+WD_ActionTypeDesc,WD_Reason,SAP_ActionType_Code,SAP_ReasonActionType_Code
+Hire Employee > Hire Employee > New Hire,New Hire,01,01
+Hire Employee > Hire Employee > Re-hire,Re-hire,12,01
+Hire Employee > Hire Employee > Contingent to Employee,Contingent to Employee,01,01
+Hire Employee > Hire Employee > Acquisition,Acquisition,01,01
+Hire Employee > Hire Employee > Conversion,Conversion,01,01
+Hire Employee > Hire Employee > Fast Track,Fast Track,01,01
+Contract Contingent Worker > New Contingent Worker > New Position,New Position,01,03
+Contract Contingent Worker > New Contingent Worker > Backfill Position,Backfill Position,01,03
+Contract Contingent Worker > New Contingent Worker > Employee to Contingent,Employee to Contingent,01,03
+Contract Contingent Worker > New Contingent Worker > Conversion,Conversion,01,03
+Data Change > Change Job Details > Change in Location,Change in Location,04,01
+Data Change > Change Job Details > Change Job Profile,Change Job Profile,04,01
+Data Change > Change Job Details > Extend End Date (Contingent),Extend End Date (Contingent),04,02
+Data Change > Change Job Details > Change in People Leader,Change in People Leader,04,13
+Data Change > Change Job Details > Change in Contract Type (Shokutaku),Change in Contract Type (Shokutaku),04,02
+Data Change > Change Job Details > Change Cost Centre,Change Cost Centre,04,01
+Data Change > Change Job Details > Change Employee Type (e.g. Perm to Fixed Term),Change in Employee Type (Perm to Fixed Term),04,16
+Data Change > Change Job Details > Change Employee Type (e.g. Fixed Term to Perm),Change in Employee Type (Fixed Term to Perm),04,15
+Data Change > Change Job Details > Change Employee Type (e.g. Casual to Perm/Fixed Term),Change in Employee Type (Casual to Perm/Fixed Term),04,08
+Data Change > Change Job Details > Change Employee Type (Perm/Fixed Term to Casual),Change in Employee Type (Perm/Fixed Term to Casual),,
+Data Change > Change Job Details > Change in Hours/Time Type,Change in Hours/Time Type,04,07
+Promotion > Promotion > Promotion (C&IB Only),Promotion (C&IB Only),04,03
+Data Change > Fixed Term Contract Change > Fixed Term : Extension,Fixed Term : Extension,04,02
+Data Change > Fixed Term Contract Change > Fixed Term : New Contract,Fixed Term : New Contract,04,02
+Transfer > Secondment > Secondment Start,Secondment Start,04,11
+Transfer > Secondment > Secondment Extension,Secondment Extension,04,11
+Transfer > Secondment > Secondment End,Secondment End,04,53
+Transfer > Transfer > Graduate Rotation,Graduate Rotation,04,13
+Transfer > Transfer > Transfer to a new Position (Reorg),Transfer to a new Position (Reorg),04,13
+Transfer > Transfer > Intercompany Transfer,Intercompany Transfer,04,13
+Transfer > Transfer > Transfer to a new Position,Transfer to a new Position,04,01
+Transfer > Transfer > Transfer to Permanent role (IA only),Transfer to Permanent role (IA only),04,13
+Data Change > International Assignment Extension > IA Extension,IA Extension,04,13
+Terminate Employee > Involuntary > Directors Separation,Directors Separation,38,97
+Terminate Employee > Involuntary > Termination on Notice,Termination on Notice,38,67
+Terminate Employee > Involuntary > Retrenchment - No Severance,Retrenchment - No Severance,38,61
+Terminate Employee > Involuntary > Retrenchment - with Severance,Retrenchment - with Severance,38,60
+Terminate Employee > Involuntary > End of Contract,End of Contract,38,80
+Terminate Employee > Involuntary > Inherent Requirements,Inherent Requirements,38,66
+Terminate Employee > Involuntary > Dismissal - Penalty to Apply,Dismissal - Penalty to Apply,38,73
+Terminate Employee > Involuntary > Dismissal - Probation,Dismissal - Probation,38,70
+Terminate Employee > Involuntary > Dismissal - Misconduct,Dismissal - Misconduct/Disciplinary,38,71
+Terminate Employee > Involuntary > Dismissal - Work Rights/Probity,Dismissal - Work Rights/Probity,38,71
+Terminate Employee > Involuntary > Dismissal - Unsatisfactory Performance,Dismissal - Unsatisfactory Performance,38,70
+Terminate Employee > Involuntary > Local Termination Reason,Local Termination Reason,,
+Terminate Employee > Involuntary > Death,Death,38,92
+Terminate Employee > Involuntary > Abandonment,Abandonment,38,79
+Terminate Employee > Involuntary > Insource - Transfer of Business,Insource - Transfer of Business,38,85
+Terminate Employee > Involuntary > Outsource - Transfer of Business,Outsource - Transfer of Business,38,68
+Terminate Employee > Involuntary > Executive Service Agreement,Executive Service Agreement,38,63
+Terminate Employee > Involuntary > Transfer within the Group,Transfer within the Group,38,85
+Terminate Employee > Involuntary > Historical Conversion,Historical Conversion,38,98
+Terminate Employee > Voluntary > Resign - Other Employment,Resign - Other Employment,38,06
+Terminate Employee > Voluntary > Resign - Personal/Other,Resign - Personal/Other,38,02
+Terminate Employee > Voluntary > Retirement,Retirement,38,45
+Terminate Employee > Voluntary > Mutual Agreement,Mutual Agreement,,
+End Contingent Worker Contract > Involuntary > Unsatisfactory Performance / Conduct,Unsatisfactory Performance / Conduct,38,70
+End Contingent Worker Contract > Involuntary > End of Contract,End of Contract,38,80
+End Contingent Worker Contract > Involuntary > Death,Death,38,92
+End Contingent Worker Contract > Involuntary > Work Rights/Probity,Work Rights/Probity,38,71
+End Contingent Worker Contract > Voluntary > Resign - Other Employment,Resign - Other Employment,38,06
+End Contingent Worker Contract > Voluntary > Resign - Personal or Other,Resign - Personal or Other,38,02
+End Contingent Worker Contract > Voluntary > Resign - Ill health,Resign - Ill health,38,40
+End Contingent Worker Contract > Voluntary > Convert Contingent to Employee,Convert Contingent to Employee,38,80
+Worker Resignation > Voluntary > Retirement,Retirement,38,45
+Worker Resignation > Voluntary > Resign - Other Employment,Resign - Other Employment,38,06
+Worker Resignation > Voluntary > Resign - Personal/Other,Resign - Personal/Other,38,02

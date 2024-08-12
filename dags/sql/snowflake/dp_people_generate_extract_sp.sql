@@ -1,0 +1,2 @@
+use schema STAGING;
+CALL SP_GENERATE_EXTRACTS();

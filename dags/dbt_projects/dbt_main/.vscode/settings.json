@@ -1,0 +1,5 @@
+{
+    "dbt.enableNewQueryPanel": false,
+    "dbt.queryLimit": 500,
+    "dbt.perspectiveTheme": "Vintage"
+}

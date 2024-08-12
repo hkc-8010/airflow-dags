@@ -1,0 +1,21 @@
+version: 2
+
+seeds:
+  - name: tbl_map_gdw_gender
+    config:
+      quote_columns: false
+  - name: tbl_map_gdw_action_reason_code
+    config:
+      quote_columns: false
+  - name: tbl_map_gdw_company_code
+    config:
+      quote_columns: false
+  - name: tbl_map_gdw_contract_type
+    config:
+      quote_columns: false
+  - name: tbl_map_gdw_employee_group
+    config:
+      quote_columns: false
+  - name: tbl_map_gdw_leave_code
+    config:
+      quote_columns: false

@@ -1,0 +1,9 @@
+db_schema:
+  raw: bnz_ip01_bnz_raw
+s3sensor:
+  S3Bucket:
+    raw: bdh-nonprod-dev01-raw
+
+informatica:
+  S3Bucket: bdh-nonprod-dev01-redshift
+  AWSrole: aws_iam_role=arn:aws:iam::336373728692:role/RedshiftCluster

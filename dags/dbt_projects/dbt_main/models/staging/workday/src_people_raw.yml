@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: people_raw
+    description: Kafka event repository
+    database: "{{ var('raw_database_name') }}"
+    schema: people
+    tables:
+      - name: colleague_data_event
+      - name: orgunit_data_event
+      - name: position_data_event
+      - name: colleagueconfidential_data_event
+      

@@ -1,0 +1,59 @@
+# Name your project! Project names should contain only lowercase characters
+# and underscores. A good package name should reflect your organization's
+# name or the intended use of these models
+name: 'dbt_main'
+version: '1.0.0'
+config-version: 2
+ 
+# This setting configures which "profile" dbt uses for this project.
+profile: 'dbt_main'
+ 
+# These configurations specify where dbt should look for different types of files.
+# The `model-paths` config, for example, states that models in this project can be
+# found in the "models/" directory. You probably won't need to change these!
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+ 
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+ 
+vars:
+    raw_database_name: "DB_BDH_RAW_DEV02"
+    unknown_hash: "md5(concat(cast(-1 as text), cast(to_timestamp('1900-01-01') as string)) )"
+    # dbt_tags__schema: staging - activate for deployment
+ 
+ 
+# Configuring models
+# Full documentation: https://docs.getdbt.com/docs/configuring-models
+ 
+# In this example config, we tell dbt to build all models in the example/
+# directory as views. These settings can be overridden in the individual model
+# files using the `{{ config(...) }}` macro.
+models:
+  +transient: true
+  +sql_header: "ALTER SESSION SET TIMESTAMP_NTZ_OUTPUT_FORMAT = 'YYYY-MM-DD HH24:MI:SS.FF9';"
+  dbt_main:
+    # Config indicated by + and applies to all files under models/example/
+    staging:
+      +schema: staging
+      +tags: "main_processing"
+      workday:
+        materialized: view
+    people:
+        +schema: dp_people
+        materialized: view
+    extracts:
+        +schema: staging
+        +tags: "main_processing"
+        materialized: view
+
+seeds:
+  +schema: dp_people
+
+on-run-end:
+  - "{{ log_dbt_results(results) }}"

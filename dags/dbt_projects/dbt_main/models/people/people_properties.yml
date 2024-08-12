@@ -1,0 +1,85 @@
+version: 2
+
+models:
+  - name: dim_contact
+    columns:
+      - name: contact_key
+        description: Unique ID (MD5) comprising the contact ID and timestamp of the message
+        data_type: varchar
+        constraints:
+          - type: not_null
+          - type: primary_key
+      - name: contact_id
+        description: The unique ID of a entity in the source system.
+        data_type: varchar
+      - name: email_address
+        description: Email address
+        data_type: varchar
+      - name: land_line_number
+        description: Landline number
+        data_type: varchar
+      - name: land_line_extension
+        description: Landline extension
+        data_type: varchar
+      - name: fax_number
+        description: Fax number
+        data_type: varchar
+      - name: contact_updated_at
+        description: Timestamp when this contact was updated or created
+        data_type: timestamp
+      - name: contact_updated_flag
+        description: Flag indicating if this resource has been updated since the last published parent event
+        data_type: boolean
+      - &dbt_valid_from
+        name: dbt_valid_from
+        description: Timestamp indictaing the start of a record's validity
+        data_type: timestamp
+      - &dbt_valid_to
+        name: dbt_valid_to
+        description: Timestamp indictaing the end of a record's validity
+      - &dbt_updated_at
+        name: dbt_updated_at
+        description: The timestamp for the record's last update
+        data_type: timestamp
+      - &created_at
+        name: created_at
+        description: Timestamp at which the record was created
+        data_type: timestamp
+      - &modified_at
+        name: modified_at
+        description: Timestamp at which the record was modified
+        data_type: timestamp
+      - &dbt_model_run_id
+        name: dbt_model_run_id
+        description: Unique ID comprising the ID of the dbt invocation and the project path of the model
+        data_type: varchar     
+
+  - name: dim_action
+    columns:
+      - name: action_key
+        description: Unique ID (MD5) comprising the action type id, action reason id and timestamp of the message
+        data_type: varchar
+        constraints:
+          - type: not_null
+          - type: primary_key
+      - name: action_id
+        description: Concatentaion of action type id and action reason id 
+        data_type: varchar
+      - name: action_type_id
+        description: The unique identifier of the action type
+        data_type: varchar
+      - name: action_type_description
+        description: The description of the action type
+        data_type: varchar
+      - name: action_reason_id
+        description: The unique identifier of the action reason
+        data_type: varchar
+      - name: action_reason_description
+        description: The description of the reason for the action
+        data_type: varchar
+      - *dbt_valid_from
+      - *dbt_valid_to
+      - *dbt_updated_at
+      - *created_at
+      - *modified_at
+      - *dbt_model_run_id
